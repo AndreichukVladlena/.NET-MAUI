@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Andreichuk_153505_lab1.ProgressDemo"
+             Title="ProgressDemo">
+    <VerticalStackLayout BackgroundColor="White" Spacing="40">
+        <Label
+            Padding="70"
+            TextColor="Black"
+            HorizontalTextAlignment="Center"
+            Text="Calculating the integral of a function sin(x) using the Rectangle Method"
+            FontSize="20"
+            />
+        <Label
+            x:Name="StatusLabel"
+            Text="push Start button"
+            HorizontalTextAlignment="Center"
+            TextColor="DarkGray"
+            FontSize="20"/>
+        <Frame BorderColor="Pink" BackgroundColor="Pink" Padding="15">
+            <ProgressBar x:Name="progressBar"
+            Progress="0"  
+            ProgressColor="DeepPink" />
+        </Frame>
+        <Label 
+            x:Name="PercentLabel"
+            Text=""
+            HorizontalTextAlignment="Center"
+            TextColor="DarkGray"
+            FontSize="20"/>
+        <Grid        
+        Padding ="5.0"
+        BackgroundColor="White"
+        ColumnSpacing="1"
+        RowSpacing="1"
+        >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+            Text="Start"
+            Clicked="OnStart"
+            TextColor="White"
+            Grid.Column="0"
+            Grid.Row="0"
+            CornerRadius="10"
+            BackgroundColor="DeepPink"
+            FontSize="36"/>
+            <Button
+            Text="Cancel"
+            Clicked="OnCancel"
+            TextColor="White"
+            Grid.Column="1"
+            Grid.Row="0"
+            CornerRadius="10"
+            BackgroundColor="DeepPink"
+            FontSize="36"/>
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>
