@@ -54,7 +54,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MusicPlayer.xaml">
+	  <Compile Update="AudioDB.xaml.cs">
+	    <DependentUpon>AudioDB.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="AudioDB.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ProgressDemo.xaml">

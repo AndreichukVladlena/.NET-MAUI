@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using System;
+using Andreichuk_153505_lab1.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Andreichuk_153505_lab1;
 
@@ -18,7 +21,9 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+        builder.Services.AddTransient<IDbService, SQLiteService>();
+        builder.Services.AddSingleton<AudioDB>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

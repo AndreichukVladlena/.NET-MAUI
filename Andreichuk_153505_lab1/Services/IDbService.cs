@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Andreichuk_153505_lab1.Entities;
+using SQLite;
 
 namespace Andreichuk_153505_lab1.Services
 {

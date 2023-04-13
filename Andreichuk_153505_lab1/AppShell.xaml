@@ -21,10 +21,9 @@
             ContentTemplate="{DataTemplate local:ProgressDemo}"/>
     </FlyoutItem>
     <FlyoutItem    
-        Title="Music Player"
-                     Icon="calcul.jpg">
+        Title="Audio Data Base">
         <ShellContent
-            Title="Music Player"          
-            ContentTemplate="{DataTemplate local:MusicPlayer}"/>
+            Title="Audio Data Base"          
+            ContentTemplate="{DataTemplate local:AudioDB}"/>
     </FlyoutItem>
 </Shell>
