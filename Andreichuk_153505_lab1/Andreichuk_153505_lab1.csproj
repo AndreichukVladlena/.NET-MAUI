@@ -63,6 +63,9 @@
 	  <MauiXaml Update="AudioDB.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="CurrencyConverter.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ProgressDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

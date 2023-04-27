@@ -26,4 +26,10 @@
             Title="Audio Data Base"          
             ContentTemplate="{DataTemplate local:AudioDB}"/>
     </FlyoutItem>
+    <FlyoutItem    
+        Title="Currency Converter">
+        <ShellContent
+            Title="Currency Convertere"          
+            ContentTemplate="{DataTemplate local:CurrencyConverter}"/>
+    </FlyoutItem>
 </Shell>

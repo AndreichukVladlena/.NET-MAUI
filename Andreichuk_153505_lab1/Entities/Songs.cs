@@ -13,6 +13,7 @@ namespace Andreichuk_153505_lab1.Entities
         [PrimaryKey, AutoIncrement, Indexed]
         [Column("Id")]
         public int SongId { get; set; }
+        
         public string Name { get; set; }
         public double Duration { get; set; }
         [Indexed]
